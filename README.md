@@ -1,27 +1,11 @@
-# BaseballGame
+We want to display baseball team results for three different teams, the goal is to diaply information about the last 4 games (win or loss - W or L), including some statistics such as average points scored and average points conceded.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+Requirements:
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- the user must be able to select one of the three teams by clicking on the provided buttons.
+- when a team is selected, its name, abbriviation, conference, result of the last 5 games, average points scored and conceded, as well as team logo must be displayed.
+- Use the pre-generated 'team-stats.component.ts' to display team statistics. This component must receive its data using inputs: One called 'team' for the team info, one called 'stats' for the statistics data.
+- You can access all the information needed using the provided 'nba.service'. Do not change this file , everything you need is in that service. Data types are also available in 'typed/data.types.ts'.
+- the logo url follows the format: 'https://interstate21.com/nba.logos/{{abbreviation}}.png'
+- Styles are provided for Win or Loss w or L with green or Red background.
+- how to apply dynamic styles to an element with angular.
